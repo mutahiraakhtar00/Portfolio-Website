@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presentation Designer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body data-page="home">
+
+  <div class="page-transition"></div>
+
+  <div class="page"> <!-- this div is only for refresh animation -->
+
+    <!--hamburger for mobile menu-->
+    <div class="topbar">
+    <button class="hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <div>Porfolio</div>
+    </div>
+
+<div class="container">
+
+ <!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+  <div class="profile">
+    <img src="https://i.pravatar.cc/100" alt="">
+    <h2>MUTAHIRA AKHTAR</h2>
+    <p>Presentation Designer</p>
+  </div>
+
+<nav>
+      <!-- <span class="indicator"></span> -->
+
+
+  <a href="index.html" class="nav-link">Home</a>
+  <a href="projects.html" class="nav-link">Projects</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+  <a href="about.html" class="nav-link">About</a>
+</nav>
+
+  <p class="tagline">Turning ideas into impactful presentations ❤️</p>
+</aside>
+
+
+  <!-- Main -->
+  <main class="main">
+
+    <section class="contact-section reveal">
+
+  <h1>Let’s Work Together</h1>
+  <p>Have an idea? Let’s turn it into a powerful presentation.</p>
+
+  <div class="contact-container">
+
+    <form class="contact-form" name="contact" method="POST" data-netlify="true">
+
+        <input type="hidden" name="form-name" value="contact">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+
+      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+
+      <button type="submit">Send Message →</button>
+
+    </form>
+
+    <div class="contact-info">
+      <h3>Contact Info</h3>
+      <p>Email: yourmail@example.com</p>
+      <p>Location: Pakistan</p>
+      <p>Available: Freelance Projects</p>
+    </div>
+
+  </div>
+
+</section>
+
+  <div class="success-popup" id="successPopup">
+    <div class="success-box">
+        <h2>Message Sent ✔</h2>
+        <p>Thanks! I’ll get back to you soon.</p>
+    </div>
+   </div>
+
+  </main>
+
+    </div>
+
+
+</div>
+
+<script src="script/main.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</body>
+<div class="cursor"></div>
+</html>
